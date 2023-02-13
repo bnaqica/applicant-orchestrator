@@ -1,0 +1,19 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://cognito-idp.us-east-2.amazonaws.com
+  cloud:
+    aws:
+      s3:
+        bucketTemplate: applicant-document-bucket-stage
+
+  datasource:
+    url: jdbc:postgresql://
+
+logging:
+  level:
+    org.springframework.vault: DEBUG
+    org.springframework.security: DEBUG
+    com.refijet.myyesgo: INFO

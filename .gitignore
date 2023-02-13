@@ -1,0 +1,26 @@
+HELP.md
+.gradle
+build
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+src/main/generated/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### MacOS ###
+.DS_Store
+
+.vscode/*
+.vscode/settings.json
+.vscode/tasks.json
+!.vscode/launch.json
+.vscode/extensions.json
+*.code-workspace

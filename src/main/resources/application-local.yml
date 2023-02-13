@@ -1,0 +1,34 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        generate_statistics: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/applicant_orchestrator_db
+    username: applicant_orchestrator_local
+    password: local
+  flyway:
+    user: applicant_orchestrator_local
+    password: local
+  cloud:
+    aws:
+      s3:
+        bucketTemplate: applicant-document-bucket-local
+      region:
+        auto: false
+        static: us-east-1
+    localstack:
+      enabled: true
+      services: SQS,SNS,S3
+      sns:
+        enabled: true
+        url: http://localhost:4566
+      sqs:
+        enabled: true
+        url: http://localhost:4566
+      s3:
+        region: us-east-1
+        accesskey: AKIAEXAMPLE123
+        secretkey: AWSSECRETACCESSEY123
+        serviceEndpoint: http://localhost:4566
+
