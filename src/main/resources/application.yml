@@ -18,10 +18,10 @@ spring:
       sqs:
         create_applicant_request: create-applicant-request-applicant-orchestrator-svc
         applicant_credit_pull_response: applicant_credit_pull_response-applicant-orchestrator-svc
-        applicant-doc-received: applicant-doc-received-applicant-orchestrator-svc
+        applicant_doc_received: applicant-doc-received-applicant-orchestrator-svc
       sns:
-        applicant_credit_pull_request: pull-credit-request
-        applicant-doc-request: applicant-doc-request
+        applicant_credit_pull_request: applicant-credit-pull-request
+        applicant_doc_request: applicant-doc-request
         create_applicant_response: create-applicant-response
 
   flyway:
